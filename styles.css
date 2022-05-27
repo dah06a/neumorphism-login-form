@@ -66,3 +66,25 @@ body {
     opacity: 0.5;
     transition: 0.15s;
 }
+
+.form_icon:hover {
+    opacity: 1;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.form_input {
+    width:350px;
+    height: 40px;
+    margin: 4px 0;
+    padding-left: 25px;
+    font-size: 14px;
+    letter-spacing: 0.15px;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--light-primary);
+    transition: 0.25s ease;
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 4px var(--dark-secondary), inset -2px -2px 4px var(--light-secondary);
+}
