@@ -124,13 +124,20 @@ body {
     outline: none;
 }
 
-.button:hover {
-    cursor: pointer;
-    box-shadow: inset 4px 4px 4px var(--blue-secondary), inset -4px -4px 4px var(--blue-secondary);
-
-}
-
 .a-container {
     z-index: 100;
+    left: calc(100% - 600px);
+}
+
+.form_link {
+    color: var(--black-primary);
+    font-size: 16px;
+    margin-top: 25px;
+    border-bottom: 1px solid var(--dark-primary);
+    line-height: 2;
+}
+
+.b-container {
+    z-index: 0;
     left: calc(100% - 600px);
 }
