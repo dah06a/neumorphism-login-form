@@ -7,6 +7,8 @@
     --dark-secondary: #d1d9e6;
     --black-primary: #181818;
     --blue-primary: #4b70e2;
+    --blue-secondary: #2452de;
+
 }
 
 *,
@@ -120,4 +122,15 @@ body {
     box-shadow: 8px 8px 16px var(--dark-secondary), 8px 8px 16px var(--light-secondary);
     border: none;
     outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    box-shadow: inset 4px 4px 4px var(--blue-secondary), inset -4px -4px 4px var(--blue-secondary);
+
+}
+
+.a-container {
+    z-index: 100;
+    left: calc(100% - 600px);
 }
