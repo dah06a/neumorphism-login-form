@@ -2,7 +2,9 @@
 
 :root {
     --light-primary: #ecf0f3;
-    --light-secondary: #a0a5a8;
+    --light-secondary: #f9f9f9; 
+    --dark-primary: #a0a5a8;
+    --dark-secondary: #d1d9e6;
 }
 
 *,
@@ -23,5 +25,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     background-color: var(--light-primary);
-    color: var(--light-secondary);
+    color: var(--dark-primary);
+}
+
+.main {
+    position: relative;
+    width: 1000px;
+    min-width: 1000px;
+    min-height: 600px;
+    padding: 25px;
+    background-color: var(--light-primary);
+    box-shadow: 10px 10px 10px var(--dark-secondary), -10px -10px 10px var(--light-secondary);
+    border-radius: 12px;
+    overflow: hidden;
 }
