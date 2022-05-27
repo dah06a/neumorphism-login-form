@@ -141,3 +141,39 @@ body {
     z-index: 0;
     left: calc(100% - 600px);
 }
+
+.switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 400px;
+    padding: 50px;
+    z-index: 200;
+    transition: 1.25s;
+    background-color: var(--light-primary);
+    overflow: hidden;
+    box-shadow: 4px 4px 10px var(--dark-secondary), -4px -4px 10px var(--light-secondary);
+}
+
+.switch_circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: var(--light-primary);
+    box-shadow: inset 8px 8px 12px var(--dark-secondary), inset -8px -8px 12px var(--light-secondary);
+    bottom: -60%;
+    left: -60%;
+    transition: 1.25s;
+}
+
+.switch_circle-t {
+    top: -30%;
+    left: 60%;
+    width: 300px;
+    height: 300px;
+}
