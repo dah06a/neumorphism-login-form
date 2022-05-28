@@ -6,3 +6,13 @@ let switchBtn = document.querySelector('.switch-btn');
 let aContainer = document.querySelector('#a-container');
 let bContainer = document.querySelector('#b-container');
 let allButtons = document.querySelector('#submit');
+
+const getButtons = (e) => e.preventDefault();
+
+const mainFunc = (e) => {
+    for (let i = 0; i < allButtons.clientHeight; i++) {
+        allButtons[i].addEventListener('click', getButtons);
+    }
+}
+
+window.addEventListener('load', mainFunc);
