@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monterserrat:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
     --light-primary: #ecf0f3;
@@ -217,4 +217,37 @@ body {
     letter-spacing: 0.25px;
     text-align: center;
     line-height: 1.6;
+}
+
+.is-gx {
+    animation: is-gx 1.25s;
+}
+
+@keyframes is-gx {
+    0%, 
+    10%, 
+    100% {
+        width: 400px;
+    }
+    30%,
+    50% {
+        width: 500px;
+    }
+}
+
+.is-txr {
+    left: calc(100% - 400px);
+    transition: 1.25s;
+    transform-origin: left;
+}
+
+.is-txl {
+    left: 0;
+    transition: 1.25s;
+    transform-origin: right;
+}
+
+.is-z200 {
+    z-index: 200;
+    transition: 1.25s;
 }
