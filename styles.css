@@ -177,3 +177,30 @@ body {
     width: 300px;
     height: 300px;
 }
+
+.switch_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    width: 400px;
+    padding: 50px 55px;
+    transition: 1.25s;
+}
+
+.switch_button {
+    cursor: pointer;
+}
+
+.switch_button:hover {
+    box-shadow: 6px 6px 10px var(--dark-secondary), 6px 6px 10px var(--light-secondary);
+    transform: scale(0.98);
+    transition: 0.25s;
+}
+
+.switch_button:active, .switch_button:focus {
+    box-shadow: 2px 2px 6px var(--dark-secondary), 2px 2px 6px var(--light-secondary);
+    transform: scale(0.97);
+    transition: 0.25s;
+}
